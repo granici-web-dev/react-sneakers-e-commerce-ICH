@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import ProductsContext from '../../context';
 import CartProductItem from '../../components/CartProductItem';
 import { Container } from '../../components/Container';
+import Headline from '../../components/ui/Headline';
 
 function Cart() {
   const { cartData } = useContext(ProductsContext);
@@ -10,7 +11,7 @@ function Cart() {
 
   return (
     <Container>
-      <h2 style={{ marginBottom: '2rem' }}>Cart</h2>
+      <Headline style={{ marginTop: '3rem' }} title={'Cart'} />
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: '10rem' }}>
         <div style={{ margin: '5rem 0', width: '100%' }}>
           {cartData.length > 0 ? (
@@ -43,7 +44,7 @@ function Cart() {
             })}
           </ul>
           <p>price:</p>
-          <p style={{fontSize: '1.5rem', fontWeight: '700'}}>{totalPrice.toFixed(2)} €</p>
+          <p style={{ fontSize: '1.5rem', fontWeight: '700' }}>{totalPrice.toFixed(2)} €</p>
         </div>
       </div>
     </Container>
