@@ -1,7 +1,8 @@
 import { Container } from "../../components/Container";
 import Headline from '../../components/ui/Headline';
 import styled from "styled-components";
-import Form from '../../components/Form'
+import Form from '../../components/Form';
+import SocialContacBlock from '../../components/SocialContacBlock';
 
 const FooterPhone = styled.a`
   color: rgba(0, 0, 0, 0.5);
@@ -23,8 +24,9 @@ function Contact() {
         <FooterPhone href="tel:+88000000000">8 800 000 00 00</FooterPhone>
         <FooterPhone href="mailto:emailexample@email.com">emailexample@email.com</FooterPhone>
       </div>
-      <div>
+      <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '4rem', flexWrap: 'wrap'}}>
         <Form />
+        <SocialContacBlock />
       </div>
     </Container>
   );

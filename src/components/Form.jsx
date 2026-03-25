@@ -16,7 +16,7 @@ function Form() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      style={{ display: 'flex', gap: '1rem', flexDirection: 'column', maxWidth: '48rem', marginBottom: '4rem' }}>
+      style={{ display: 'flex', gap: '1rem', flexDirection: 'column', maxWidth: '48rem', marginBottom: '4rem', width: '100%' }}>
       <div style={{ display: 'flex', gap: '2rem' }}>
         <input
           type="email"
