@@ -5,9 +5,11 @@ import Footer from '../Footer';
 
 function Layout() {
   return (
-    <div>
-      <Header />
-      <Outlet />
+    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+      <div>
+        <Header />
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

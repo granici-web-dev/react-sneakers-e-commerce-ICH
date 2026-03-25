@@ -35,12 +35,14 @@ function Footer() {
   return (
     <StyledFooter>
       <Container>
-        <div>
-          <FooterHeadline>Contacts</FooterHeadline>
-          <FooterNav>
-            <FooterPhone href="tel:+88000000000">8 800 000 00 00</FooterPhone>
-            <FooterPhone href="mailto:emailexample@email.com">emailexample@email.com</FooterPhone>
-          </FooterNav>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <div>
+            <FooterHeadline>Contacts</FooterHeadline>
+            <FooterNav>
+              <FooterPhone href="tel:+88000000000">8 800 000 00 00</FooterPhone>
+              <FooterPhone href="mailto:emailexample@email.com">emailexample@email.com</FooterPhone>
+            </FooterNav>
+          </div>
           <FooterSocials>
             <SocialsIcon />
           </FooterSocials>

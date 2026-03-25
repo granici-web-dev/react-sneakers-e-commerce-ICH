@@ -2,15 +2,19 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout';
 import Home from './pages/home';
-import Header from './components/Header';
+import Cart from './pages/cart'
+import ProductProvider from './components/productsProvider';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
+    <ProductProvider>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+        </Route>
+      </Routes>
+    </ProductProvider>
   );
 }
 
